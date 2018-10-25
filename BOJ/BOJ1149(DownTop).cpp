@@ -8,10 +8,7 @@ using namespace std;
 
 int dp[3][1000];
 
-int min(int a, int b)
-{
-	return a < b ? a : b;
-}
+#define min(a,b) ((a < b) ? a : b)
 
 int main(void)
 {
@@ -30,6 +27,7 @@ int main(void)
 		dp[G][i] = min(dp[R][i - 1], dp[B][i - 1]) + g;
 		dp[B][i] = min(dp[G][i - 1], dp[R][i - 1]) + b;
 	}
+
 	printf("%d\n", min(dp[R][houseCount - 1], min(dp[G][houseCount - 1], dp[B][houseCount - 1])));
 	return 0;
 }
