@@ -7,7 +7,7 @@ using namespace std;
 
 int stairs[301];
 int dp[301];
-
+	
 int main(void)
 {
 	ios::ios_base::sync_with_stdio(false);
@@ -26,7 +26,7 @@ int main(void)
 
 	for (int i = 2; i <= count; ++i)
 	{
-		dp[i] = max(dp[i - 2], dp[i - 3] + stairs[i - 1]) + stairs[i];
+		dp[i] = max(dp[i - 2], ((i > 2) ? dp[i - 3] : 0) + stairs[i - 1]) + stairs[i];
 	}
 
 	cout << dp[count];

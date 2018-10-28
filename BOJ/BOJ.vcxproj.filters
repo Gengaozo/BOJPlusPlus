@@ -87,7 +87,13 @@
     <ClCompile Include="BOJ1463.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BOJ1005.cpp">
+    <ClCompile Include="BOJ7576.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ7569.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ2178.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
